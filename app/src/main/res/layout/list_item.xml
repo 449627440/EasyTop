@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:minHeight="60dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/card_background_selector"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+
+    <TextView
+        android:id="@+id/show_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="14dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp">
+
+    </TextView>
+    <TextView
+        android:gravity="right"
+        android:id="@+id/show_time"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:paddingRight="10dp"
+        android:textSize="10sp">
+
+    </TextView>
+</LinearLayout>

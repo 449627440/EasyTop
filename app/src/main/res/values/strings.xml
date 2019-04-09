@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">易志通</string>
+    <string name="app_personalcenter">个人中心</string>
+    <string name="action_settings">设置</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="activity_name_label">活动名称</string>
+    <string name="describe_image_label">这里是描述性文字</string>
+    <string name="tv_smallword">这里是描述性小字</string>
+    <string name="title">旅行笔记</string>
+    <string name="newnote">暂无记录</string>
+    <string name="submit01">提交</string>
+    <string name="empty">这座城市，非做不可的事</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="label_cancel">取消</string>
+    <string name="label_ok">确定</string>
+    <string name="permission_title_rationale">权限需求</string>
+    <string name="permission_read_storage_rationale">选择图片时需要读取权限</string>
+    <string name="permission_write_storage_rationale">拍照时需要存储权限</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

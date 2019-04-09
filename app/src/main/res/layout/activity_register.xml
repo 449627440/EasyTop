@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="11"
+            android:hint="手机号"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/send"
+            android:text="获取验证码"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="设置密码"
+        android:maxLength="20"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:layout_marginLeft="22dp"
+        android:padding="10dp"
+        android:text="验证码"/>
+
+    <com.jkb.vcedittext.VerificationCodeEditText
+        android:id="@+id/code"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        app:bottomLineHeight="2dp"
+        app:bottomLineNormalColor="@color/colorPrimary"
+        app:bottomLineSelectedColor="@color/colorAccent"
+        app:figures="6"
+        app:selectedBackgroundColor="@color/__picker_item_photo_border_n"
+        app:verCodeMargin="5dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:text="注    册"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+
+
+
+</LinearLayout>

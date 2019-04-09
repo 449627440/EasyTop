@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    tools:context="com.swufe.bluebook.LoginOrRegister.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bottom"
+        android:scaleType="fitCenter"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:inputType="number"
+        android:maxLength="11"
+        android:hint="手机号"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:maxLength="20"
+        android:hint="密码"
+        android:padding="10dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/login"
+            android:text="登   录"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#DAC224"/>
+        <Button
+            android:id="@+id/register"
+            android:text="注   册"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#DAC224"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/loginbottom"
+        android:scaleType="fitCenter"/>
+
+
+
+
+</LinearLayout>

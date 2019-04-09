@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="切换城市" android:icon="@drawable/out" android:id="@+id/item_1"/>
+
+    <item android:title="留言墙" android:icon="@drawable/book" android:id="@+id/item_2"/>
+
+    <item android:title="随笔本" android:icon="@drawable/note" android:id="@+id/item_3"/>
+
+    <item android:title="教育资讯" android:icon="@drawable/collect" android:id="@+id/item_4"/>
+
+    <item android:title="设置" android:icon="@drawable/setting" android:id="@+id/item_5"/>
+
+</menu>

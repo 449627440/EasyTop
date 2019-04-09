@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.swufe.bluebook">
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".CityChooseSlide.GlobalApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/fanglogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/yuanlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        <activity android:name=".Predict.MoreResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Predict.ResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Predict.PredictActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TabPagers.QuanjingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ContentActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Launch.LaunchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginOrRegister.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginOrRegister.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JumpPage.ScrollingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotePackage.AddNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotePackage.Main2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CityChooseSlide.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotePackage.UpdateOrReadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PersonalCenter.Photo.CropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PersonalCenter.Photo.PersonalCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.swufe.bluebook.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+        </provider> <!-- *************************************百度地图配置 Start**************************************** -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v3.6" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="uglVkqR9FhWpqZ3ndUPgCFzPzELKvUhu" /> <!-- *************************************百度地图配置 End**************************************** -->
+        <activity android:name=".PersonalCenter.Photo.UpdateNicnameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LoginOrRegister.UpdatePaswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FindPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Moment.MomentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Moment.PublishActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".News.NewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Collect.CollectActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Handbook.HandbookActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Advise.FeedbackActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Setting2Activity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

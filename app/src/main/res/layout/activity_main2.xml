@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/littlewhite"
+    tools:context="com.swufe.bluebook.NotePackage.Main2Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/note_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="?attr/colorPrimaryDark"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/title_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="出行备忘录"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btn_addnote"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:scaleType="fitXY"
+            android:src="@drawable/right" />
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/listview"
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/note_num"
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="2dp"
+            android:scaleType="fitXY"
+            android:text="@string/newnote"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
